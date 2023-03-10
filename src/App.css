@@ -1,0 +1,197 @@
+.section {
+	height: 100vh;
+	height: 100svh;
+	/* eliminates ui elements on mobile */
+	min-height: 100vh;
+	min-height: 100svh;
+	width: 100vw;
+	position: relative;
+	padding-inline: 150px;
+	padding-block: 75px;
+}
+.heroContainer {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.textHero {
+	margin-bottom: 100px;
+}
+
+/* ABOUT SECTION */
+
+.aboutSection {
+	height: auto;
+	min-height: auto;
+}
+.containerAbout {
+	color: black;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	align-items: flex-start;
+}
+.titleDesc {
+	/* height: 100%; */
+	line-height: 200%;
+}
+.titleAbout {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+.lineAbout {
+	background-color: black;
+	width: 100%;
+	height: 1px;
+	margin-left: 20px;
+}
+.imageWrapper {
+	display: block;
+	position: relative;
+}
+.image {
+	background-color: antiquewhite;
+	border-radius: 30px;
+	height: 500px;
+	width: 300px;
+	aspect-ratio: auto;
+}
+.imageWrapper::before {
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	height: 100%;
+	width: 100%;
+	display: block;
+	border: 5px solid antiquewhite;
+	border-radius: 30px;
+	z-index: -10;
+}
+.imageWrapper:hover::before {
+	top: 5px;
+	left: 5px;
+	/* background-color: hsla(271, 76%, 53%, 30%); */
+	z-index: +10;
+}
+
+.textContainerAbout {
+	display: flex;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+/* PROJECT SECTION */
+
+.projectSection {
+	height: auto;
+}
+.containerSection {
+	/* margin: 50px; */
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+}
+.titleContainer {
+	display: flex;
+	align-items: center;
+}
+.projectTitle {
+	text-transform: uppercase;
+}
+.projectLine {
+	height: 1px;
+	width: 90%;
+	margin-left: 50px;
+	background-color: black;
+}
+/* project component  NEW */
+.projectContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.reverse,
+.reverse ul {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+.projectImage {
+	height: 400px;
+	width: 545px;
+	border-radius: 30px;
+	background-color: beige;
+	aspect-ratio: auto;
+}
+.projectImageWrapper {
+	text-align: center;
+}
+
+.textContainer,
+.projectImageWrapper {
+	flex: 1;
+}
+.textContainer {
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.projectTech ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+/* CONTACT SECTION */
+
+.contactSection {
+	padding-bottom: 0;
+}
+.contactContainer {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contactTitle h2 {
+	text-transform: uppercase;
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+.contactBox {
+	height: 100%;
+	width: 100%;
+	background-color: gray;
+	border-start-end-radius: 30px;
+	border-start-start-radius: 30px;
+	padding-inline: 200px;
+	padding-block: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.contactFormMessage,
+.contactFormMail,
+.contactFormName {
+	margin-block: 20px;
+	padding-block: 20px;
+	border-bottom: 1px solid yellow;
+}
+.contactFormButton {
+	padding: 15px;
+	background-color: white;
+	border-radius: 30px;
+	text-align: center;
+}

@@ -1,0 +1,17 @@
+1: static website
+   1a: main page
+      - hero section ---> DONE
+      - about section
+      - project section
+      - contact section
+      - menu
+   1b: project page
+   1c: about page
+   1d: contact
+
+2: responsive website
+
+3: animation
+
+4: 
+

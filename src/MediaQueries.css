@@ -1,0 +1,87 @@
+/* mobile S */
+@media (max-width: 320px) {
+	/* project section */
+	.containerSection {
+		margin: 0;
+		gap: 50px;
+	}
+	.projectContainer {
+		width: auto;
+		margin-inline: 10px;
+		padding: 15px;
+		border-radius: 10px;
+		background-color: gray;
+		flex-direction: column-reverse;
+	}
+	.projectImage {
+		height: 150px;
+		width: 200px;
+	}
+	.textContainer {
+		gap: 10px;
+		align-items: center;
+		text-align: center;
+	}
+	.textContainer,
+	.projectImage {
+		flex: auto;
+	}
+}
+
+/* mobile M*/
+@media (max-width: 375px) {
+}
+
+/* mobile L */
+@media (max-width: 425px) {
+	.titleAbout {
+		justify-content: center;
+	}
+	.lineAbout {
+		display: none;
+	}
+	.contactBox {
+		padding-inline: 50px;
+	}
+}
+
+/* tablet */
+@media (max-width: 768px) {
+	.heroContainer {
+		padding: 25px;
+		text-align: center;
+		justify-content: center;
+	}
+	.containerAbout {
+		align-items: center;
+		gap: 50px;
+	}
+	.titleDesc {
+		text-align: center;
+		margin: auto;
+	}
+	.imageWrapper {
+		display: none;
+	}
+}
+
+/* laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.image {
+		height: 300px;
+		width: 250px;
+	}
+	.contactBox {
+		padding-inline: 130px;
+	}
+}
+
+/* laptop L */
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.image {
+		height: 400px;
+	}
+	.titleDesc {
+		line-height: 150%;
+	}
+}

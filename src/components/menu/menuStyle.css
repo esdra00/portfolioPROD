@@ -1,0 +1,45 @@
+.navMenu,
+.navLinksWrapper {
+	color: black;
+	display: flex;
+	align-items: center;
+}
+.navMenu {
+	position: fixed;
+	top: 1.75%;
+	left: 50px;
+	right: 50px;
+	z-index: +10;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.navLinksWrapper {
+	background-color: hsla(0, 0%, 50%, 50%);
+	padding: 10px;
+	border-radius: 10px;
+}
+.navLink {
+	margin-right: 30px;
+}
+
+.line {
+	background-color: black;
+	width: 100%;
+	height: 1px;
+	margin-inline: 20px;
+}
+
+@media (max-width: 1024px) {
+	.navMenu {
+		right: 25px;
+		left: 25px;
+	}
+}
+@media (max-width: 425px) {
+	.navLinksWrapper {
+		display: none;
+	}
+	.navMenu {
+		right: 15px;
+		left: 15px;
+	}
+}

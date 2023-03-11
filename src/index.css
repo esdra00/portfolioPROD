@@ -61,6 +61,12 @@ li {
 	color: black;
 	background-color: white;
 }
+.lineTitle {
+	height: 1px;
+	width: 100%;
+	margin-inline: 30px;
+	background-color: black;
+}
 
 /* MEDIA QUERIES */
 
@@ -77,6 +83,12 @@ li {
 	.section {
 		padding-inline: 15px;
 		padding-block: 20px;
+	}
+	.contactSection {
+		padding-bottom: 0;
+	}
+	.lineTitle {
+		margin-inline: 10px;
 	}
 	h1 {
 		font-size: 40px;

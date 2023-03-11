@@ -47,12 +47,7 @@
 	white-space: nowrap;
 	text-transform: uppercase;
 }
-.lineAbout {
-	background-color: black;
-	width: 100%;
-	height: 1px;
-	margin-left: 20px;
-}
+
 .imageWrapper {
 	display: block;
 	position: relative;
@@ -126,8 +121,8 @@
 	text-align: right;
 }
 .projectImage {
-	height: 400px;
-	width: 545px;
+	height: auto;
+	width: 100%;
 	border-radius: 15px;
 	background-color: beige;
 	aspect-ratio: auto;

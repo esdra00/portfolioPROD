@@ -38,7 +38,7 @@
 		width: 100%;
 	}
 	.textContainer {
-		line-height: 150%;
+		line-height: 170%;
 		gap: 15px;
 		align-items: center;
 		text-align: center;
@@ -47,6 +47,7 @@
 	.projectImage {
 		flex: auto;
 	}
+
 }
 
 /* tablet */

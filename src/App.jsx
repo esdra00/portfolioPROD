@@ -67,8 +67,10 @@ export default function App() {
 				<div className="section aboutSection">
 					<div className="containerAbout">
 						<div className="titleAbout">
+							<span className="lineTitle"></span>
+
 							<h2>About me</h2>
-							<div className="lineAbout"></div>
+							<span className="lineTitle"></span>
 						</div>
 						<div className="textContainerAbout">
 							<div className="titleDesc">
@@ -117,8 +119,9 @@ export default function App() {
 				<div className="section projectSection">
 					<div className="containerSection">
 						<div className="titleContainer">
+							<span className="lineTitle"></span>
 							<h2 className="projectTitle">Project</h2>
-							<span className="projectLine"></span>
+							<span className="lineTitle"></span>
 						</div>
 						<Project preview={ipAddressTracker} />
 						<Project

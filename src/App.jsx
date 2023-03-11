@@ -1,58 +1,56 @@
 import "./App.css";
-import projectsData from "./assets/data.json";
 import profilePicture from "./assets/_shirt - no bg - cropped.png";
+import Contact from "./components/contact/contact";
 import Menu from "./components/menu/menu";
+import Project from "./components/project/project";
 import SocialMenu from "./components/social/social";
 import "./MediaQueries.css";
+// import projectsData from "./assets/data.json";
 
-function Project() {
-	return (
-		<>
-			{projectsData &&
-				projectsData.map((project) => {
-					return (
-						<div
-							className={`projectContainer ${project.Orientation}`}
-							key={project.id}
-						>
-							<div className="textContainer">
-								<h3 className="projectName">
-									{project.title}
-								</h3>
-								<div className="projectDescription">
-									{project.Description}
-								</div>
-								<div className="projectTech">
-									<ul>
-										{project.Frameworks.map(
-											(framework) => {
-												return (
-													<li className="projectFramework">
-														{
-															framework
-														}
-													</li>
-												);
-											}
-										)}
-									</ul>
-								</div>
-							</div>
-							<div className="projectImageWrapper">
-								<img
-									src={project.Preview}
-									alt=""
-									className="projectImage"
-									height={1056}
-									width={1440}
-								/>
-							</div>
-						</div>
-					);
-				})}
-		</>
-	);
-}
+// function Project() {
+// 	return (
+// 		<>
+// 			{projectsData &&
+// 				projectsData.map((project) => {
+// 					return (
+// 						<div
+// 							className={`projectContainer ${project.Orientation}`}
+// 							key={project.id}
+// 						>
+// 							<div className="textContainer">
+// 								<h3 className="projectName">
+// 									{project.title}
+// 								</h3>
+// 								<p className="projectDescription">
+// 									{project.Description}
+// 								</p>
+// 								<ul className="projectTech">
+// 									{project.Frameworks.map(
+// 										(framework) => {
+// 											return (
+// 												<li className="projectFramework">
+// 													{framework}
+// 												</li>
+// 											);
+// 										}
+// 									)}
+// 								</ul>
+// 							</div>
+// 							<div className="projectImageWrapper">
+// 								<img
+// 									src={project.Preview}
+// 									alt=""
+// 									className="projectImage"
+// 									height={1056}
+// 									width={1440}
+// 								/>
+// 							</div>
+// 						</div>
+// 					);
+// 				})}
+// 		</>
+// 	);
+// }
 
 export default function App() {
 	return (
@@ -131,35 +129,7 @@ export default function App() {
 						<Project />
 					</div>
 				</div>
-				{/* CONTACT SECTION */}
-				<div className="section contactSection">
-					<div className="contactContainer">
-						<div className="contactTitle">
-							<h2>Let's work togheter!</h2>
-						</div>
-						<div className="contactBox">
-							<div className="contactDesc">
-								Do you have any question? Are you
-								interested in working with me? Do you
-								have any suggestion?
-								<br />
-								Please let me know.
-							</div>
-							<div className="contactForm">
-								<div className="contactFormName">
-									My name is:
-								</div>
-								<div className="contactFormMail">
-									My e-mail is:
-								</div>
-								<div className="contactFormMessage">
-									Your message
-								</div>
-							</div>
-							<div className="contactFormButton">Send</div>
-						</div>
-					</div>
-				</div>
+				<Contact />
 			</div>
 		</>
 	);

@@ -1,0 +1,67 @@
+/* PROJECT SECTION */
+
+.projectSection {
+	height: auto;
+}
+.containerSection {
+	/* margin: 50px; */
+	display: flex;
+	flex-direction: column;
+	gap: 120px;
+}
+.titleContainer {
+	display: flex;
+	align-items: center;
+}
+.projectTitle {
+	text-transform: uppercase;
+}
+.projectLine {
+	height: 1px;
+	width: 90%;
+	margin-left: 50px;
+	background-color: black;
+}
+/* project component  NEW */
+.projectContainer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.reverse,
+.reverse ul {
+	flex-direction: row-reverse;
+	text-align: right;
+}
+.projectFramework {
+	background-color: beige;
+	padding: 2.5px;
+	border-radius: 5px;
+}
+.projectImage {
+	height: auto;
+	width: 100%;
+	border-radius: 15px;
+	background-color: beige;
+	aspect-ratio: auto;
+}
+.projectImageWrapper {
+	text-align: center;
+}
+
+.textContainer,
+.projectImageWrapper {
+	flex: 1;
+}
+.textContainer {
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.projectTech {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 15px;
+}

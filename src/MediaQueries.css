@@ -45,7 +45,7 @@
 	.projectImage {
 		flex: auto;
 	}
-	.projectTech ul {
+	.projectTech {
 		justify-content: center;
 		row-gap: 10px;
 	}

@@ -82,7 +82,7 @@ li {
 @media (max-width: 425px) {
 	.section {
 		padding-inline: 15px;
-		padding-block: 20px;
+		padding-block: 40px;
 	}
 	.contactSection {
 		padding-bottom: 0;

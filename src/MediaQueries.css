@@ -14,9 +14,7 @@
 	.lineAbout {
 		display: none;
 	}
-	.contactBox {
-		padding-inline: 50px;
-	}
+
 	/* project section */
 	.containerSection {
 		margin: 0;
@@ -39,7 +37,7 @@
 	}
 	.textContainer {
 		line-height: 170%;
-		gap: 15px;
+		gap: 25px;
 		align-items: center;
 		text-align: center;
 	}
@@ -47,7 +45,17 @@
 	.projectImage {
 		flex: auto;
 	}
-
+	.projectTech ul {
+		justify-content: center;
+		row-gap: 10px;
+	}
+	.contactContainer {
+		justify-content: flex-end;
+	}
+	.contactBox {
+		padding-inline: 50px;
+		max-height: 80%;
+	}
 }
 
 /* tablet */

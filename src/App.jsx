@@ -1,50 +1,55 @@
 import "./App.css";
-import ipAddressTracker from "./assets/projects preview/desktop-preview 2.jpg";
-import restCountryApi from "./assets/projects preview/desktop-preview 3.jpg";
-import interactiveCommentSection from "./assets/projects preview/desktop-preview 4.jpg";
-import multiStepForm from "./assets/projects preview/desktop-preview.jpg";
-
+import projectsData from "./assets/data.json";
 import profilePicture from "./assets/_shirt - no bg - cropped.png";
 import Menu from "./components/menu/menu";
 import SocialMenu from "./components/social/social";
 import "./MediaQueries.css";
 
-function Project(props) {
-	let left = props.orientation;
-	let preview = props.preview;
+function Project() {
 	return (
 		<>
-			<div className={`projectContainer ${left ? "reverse" : ""}`}>
-				<div className="textContainer">
-					<h3 className="projectName">Project1</h3>
-					<div className="projectDescription">
-						Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Dicta qui delectus repellendus maxime a
-						nihil veritatis atque debitis pariatur, accusamus,
-						labore dolorum? Nulla facilis qui illo, esse non
-						nemo at quibusdam error ipsum eius harum minus
-						iure? Laborum, consequatur sapiente hic dolor
-						eligendi velit ipsum nulla sunt ex ipsa assumenda?
-					</div>
-					<div className="projectTech">
-						<ul>
-							<li>React</li>
-							<li>Javascript</li>
-							<li>Bootstrap</li>
-							<li>Next</li>
-						</ul>
-					</div>
-				</div>
-				<div className="projectImageWrapper">
-					<img
-						src={preview}
-						alt=""
-						className="projectImage"
-						height={1056}
-						width={1440}
-					/>
-				</div>
-			</div>
+			{projectsData &&
+				projectsData.map((project) => {
+					return (
+						<div
+							className={`projectContainer ${project.Orientation}`}
+							key={project.id}
+						>
+							<div className="textContainer">
+								<h3 className="projectName">
+									{project.title}
+								</h3>
+								<div className="projectDescription">
+									{project.Description}
+								</div>
+								<div className="projectTech">
+									<ul>
+										{project.Frameworks.map(
+											(framework) => {
+												return (
+													<li className="projectFramework">
+														{
+															framework
+														}
+													</li>
+												);
+											}
+										)}
+									</ul>
+								</div>
+							</div>
+							<div className="projectImageWrapper">
+								<img
+									src={project.Preview}
+									alt=""
+									className="projectImage"
+									height={1056}
+									width={1440}
+								/>
+							</div>
+						</div>
+					);
+				})}
 		</>
 	);
 }
@@ -123,16 +128,7 @@ export default function App() {
 							<h2 className="projectTitle">Project</h2>
 							<span className="lineTitle"></span>
 						</div>
-						<Project preview={ipAddressTracker} />
-						<Project
-							orientation="left"
-							preview={multiStepForm}
-						/>
-						<Project preview={restCountryApi} />
-						<Project
-							orientation="left"
-							preview={interactiveCommentSection}
-						/>
+						<Project />
 					</div>
 				</div>
 				{/* CONTACT SECTION */}

@@ -3,7 +3,7 @@
 	line-height: 1.5;
 	font-weight: 400;
 
-	color-scheme: light dark;
+	/* color-scheme: light dark; */
 	/* color: rgba(255, 255, 255, 0.87); */
 	/* background-color: #242424; */
 
@@ -20,7 +20,18 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
 body {
+	background-color: white;
 	min-width: 100vw;
 	overflow-x: hidden;
 	/* margin: 0;

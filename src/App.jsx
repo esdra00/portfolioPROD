@@ -71,7 +71,6 @@ export default function App() {
 					<div className="containerAbout">
 						<div className="titleAbout">
 							<span className="lineTitle"></span>
-
 							<h2>About me</h2>
 							<span className="lineTitle"></span>
 						</div>

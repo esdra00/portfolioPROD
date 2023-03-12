@@ -49,13 +49,8 @@
 		justify-content: center;
 		row-gap: 10px;
 	}
-	.contactContainer {
-		justify-content: flex-end;
-	}
-	.contactBox {
-		padding-inline: 50px;
-		max-height: 80%;
-	}
+
+
 }
 
 /* tablet */
@@ -80,10 +75,10 @@
 
 /* laptop */
 @media (min-width: 769px) and (max-width: 1024px) {
-	.image {
+	/* .image {
 		height: 300px;
 		width: 250px;
-	}
+	} */
 	.contactBox {
 		padding-inline: 130px;
 	}
@@ -91,9 +86,9 @@
 
 /* laptop L */
 @media (min-width: 1025px) and (max-width: 1440px) {
-	.image {
+	/* .image {
 		height: 400px;
-	}
+	} */
 	.titleDesc {
 		line-height: 150%;
 	}

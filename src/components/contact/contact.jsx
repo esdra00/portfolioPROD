@@ -1,4 +1,4 @@
-import "./contactStyle.css"
+import "./contactStyle.css";
 export default function Contact() {
 	return (
 		<>
@@ -16,21 +16,83 @@ export default function Contact() {
 							<br />
 							Please let me know.
 						</div>
-						<div className="contactForm">
-							<div className="contactFormName">
+						<form className="contactForm">
+							<label
+								for="name"
+								className="contactFormName"
+							>
 								My name is:
-							</div>
-							<div className="contactFormMail">
+								<input
+									type="text"
+									id="name"
+									name="name"
+								/>
+							</label>
+							<label
+								for="email"
+								className="contactFormMail"
+							>
 								My e-mail is:
-							</div>
-							<div className="contactFormMessage">
+								<input
+									type="email"
+									id="email"
+									name="email"
+								/>
+							</label>
+							<label
+								for="message"
+								className="contactFormMessage"
+							>
 								Your message
-							</div>
-						</div>
-						<div className="contactFormButton">Send</div>
+								<textarea
+									name="message"
+									// rows={8}
+									// cols={200}
+								></textarea>
+							</label>
+						</form>
+						<button className="contactFormButton">
+							Send
+						</button>
 					</div>
 				</div>
 			</div>
 		</>
 	);
 }
+
+// <form className="contactForm">
+// 	<label
+// 		for="name"
+// 		className="contactFormName"
+// 	>
+// 		My name is:
+// 		<input
+// 			type="text"
+// 			id="name"
+// 			name="name"
+// 		/>
+// 	</label>
+// 	<label
+// 		for="email"
+// 		className="contactFormMail"
+// 	>
+// 		My e-mail is:
+// 		<input
+// 			type="email"
+// 			id="email"
+// 			name="email"
+// 		/>
+// 	</label>
+// 	<label
+// 		for="message"
+// 		className="contactFormMessage"
+// 	>
+// 		Your message
+// 		<textarea
+// 			name="message"
+// 			rows={8}
+// 			cols={30}
+// 		></textarea>
+// 	</label>
+// </form>;

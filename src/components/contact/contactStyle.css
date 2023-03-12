@@ -15,11 +15,8 @@
 	font-size: 60px;
 	margin-bottom: 40px;
 }
-@media (max-width: 425px) {
-	.contactTitle h2 {
-		font-size: 30px;
-		text-align: center;
-	}
+.contactDesc {
+	text-align: center;
 }
 .contactForm,
 .contactForm label {
@@ -79,10 +76,15 @@ textarea {
 	.contactContainer {
 		justify-content: flex-end;
 	}
+
 	.contactBox {
 		padding-inline: 25px;
-		max-height: 70%;
+		max-height: 90%;
 		justify-content: flex-start;
+	}
+	.contactTitle h2 {
+		font-size: 30px;
+		text-align: center;
 	}
 	.contactForm {
 		padding: 20px;

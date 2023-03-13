@@ -1,10 +1,12 @@
 import "./App.css";
 import profilePicture from "./assets/_shirt - no bg - cropped.png";
 import Contact from "./components/contact/contact";
+import MenuMobile from "./components/menu mobile/menuMobile";
 import Menu from "./components/menu/menu";
 import Project from "./components/project/project";
 import SocialMenu from "./components/social/social";
 import "./MediaQueries.css";
+
 // import projectsData from "./assets/data.json";
 
 // function Project() {
@@ -57,7 +59,7 @@ export default function App() {
 		<>
 			<SocialMenu />
 			<Menu />
-
+			<MenuMobile />
 			<div className="App">
 				<div className="section">
 					<div className="heroContainer">

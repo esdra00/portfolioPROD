@@ -46,7 +46,7 @@ export default function Contact() {
 								Your message
 								<textarea
 									name="message"
-									// rows={8}
+									rows={8}
 									// cols={200}
 								></textarea>
 							</label>

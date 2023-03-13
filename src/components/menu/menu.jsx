@@ -1,8 +1,14 @@
+import { useState } from "react";
 import "./menuStyle.css";
 
 export default function Menu() {
+	const [isActive, setActive] = useState(false);
+
+	const toggleClass = () => {
+		setActive(!isActive);
+	};
+
 	var prevScrollpos = window.pageYOffset;
-	
 	window.onscroll = function () {
 		var currentScrollPos = window.pageYOffset;
 		if (prevScrollpos > currentScrollPos) {
@@ -42,7 +48,7 @@ export default function Menu() {
 						/>
 					</svg>
 				</a>
-				<div className="line"></div>
+				<div className="lineTitle"></div>
 				<ul className="navLinksWrapper">
 					<li>
 						<a className="navLink">Home</a>
@@ -60,6 +66,17 @@ export default function Menu() {
 						<h3 className="cta">RESUME</h3>
 					</li>
 				</ul>
+				<div className={`btn-cont ${isActive ? "active" : ""}`}>
+					<div
+						className={`main-btn ${isActive ? "active" : ""}`}
+						onClick={toggleClass}
+					>
+						<div className="custom-menu-toggle openMenu"></div>
+					</div>
+					<div className="side-btns">
+						<div className="side-btn"></div>
+					</div>
+				</div>
 			</nav>
 		</>
 	);
